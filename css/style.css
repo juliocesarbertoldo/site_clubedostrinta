@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+/* Typical Device Breakpoints
+------------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+/********** CONFIGURAÇÃO PRINCIPAL **********/
+:root {
+    --corAzulBrilho: #14A1D9;
+    --corAzulFosco: #7DC1DB;
+    --corPurple: #C629D9;
+    --corAmarelo: #ffdb8c;
+    --corVerde: #c4ff8c;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-midia: 'Ubuntu', sans-serif;
+    --fonte-cardapio: 'Jua', cursive; 
+}
+/********************************************/
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header .bt-burguer {
+    width: 100vw;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--corAzulBrilho);
+    color: white;
+    cursor: pointer;
+}
+
+header .lista-menu {
+    display: none;
+    list-style: none;
+}
+
+header .lista-menu .link-menu {
+    display: block;
+    padding: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--corAzulFosco);
+    color: white;
+    border-top: 1px solid gainsboro;
+}
+
+section.cardapio {
+    font-family: var(--fonte-cardapio);
+    width: 100vw;
+    background-color: #303030;
+    letter-spacing: 5px;
+}
+
+section .lista-cardapio {
+    list-style: none;
+    width: 85%;
+    margin: auto;
+}
+
+section .grupo {
+    padding: 10px 5px;
+    padding-bottom: 0px;
+    font-size: 30px;
+    color: white;
+}
+
+section .sub-grupo {
+    width: 90%;
+    margin: auto;
+    padding: 0px 10px 10px;
+    font-size: 15px;
+    font-family: var(--fonte-padrao);
+    font-style: italic;
+    color: var(--corVerde);
+}
+
+section .item-cardapio {
+    display: grid;
+    grid-template-columns: 10% 50% 10% 15% 15%;
+    height: 80px;
+    margin: 5px 0px;
+    padding: 5px 10px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 70px;
+    color: var(--corAmarelo);
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+section .descricao-item-cardapio {
+    text-indent: 10px;
+}
+
+section .vlr-item-cardapio{
+    padding: 0px 5px;
+    text-align: end;
+}
