@@ -33,12 +33,24 @@ Grandes telas: acima de 1200px
     box-sizing: border-box;
 }
 
+body {
+    background-color: #303030;
+}
+
 header .bt-burguer {
-    width: 100vw;
+   
+   
+   
+   
+    display: none;
+   
+   
+   
+   
+    width: 100%;
     padding: 10px;
     text-align: center;
-    background-color: var(--corAzulBrilho);
-    color: white;
+    background-color: var(--corAmarelo);
     cursor: pointer;
 }
 
@@ -53,33 +65,33 @@ header .lista-menu .link-menu {
     font-size: 15px;
     text-transform: uppercase;
     text-align: center;
-    background-color: var(--corAzulFosco);
-    color: white;
+    background-color: var(--corVerde);
     border-top: 1px solid gainsboro;
 }
-
 section.cardapio {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
     font-family: var(--fonte-cardapio);
-    width: 100vw;
-    background-color: #303030;
     letter-spacing: 5px;
+    padding: 10px;
 }
 
 section .lista-cardapio {
     list-style: none;
-    width: 85%;
+    width: 80%;
     margin: auto;
 }
 
 section .grupo {
     padding: 10px 5px;
     padding-bottom: 0px;
-    font-size: 30px;
+    font-size: 25px;
     color: white;
 }
 
 section .sub-grupo {
-    width: 90%;
+    width: 80%;
     margin: auto;
     padding: 0px 10px 10px;
     font-size: 15px;
@@ -94,7 +106,7 @@ section .item-cardapio {
     height: 80px;
     margin: 5px 0px;
     padding: 5px 10px;
-    font-size: 13px;
+    font-size: 12px;
     letter-spacing: 1px;
     line-height: 70px;
     color: var(--corAmarelo);
@@ -104,10 +116,94 @@ section .item-cardapio {
 }
 
 section .descricao-item-cardapio {
-    text-indent: 10px;
+    text-indent: 3px;
 }
 
 section .vlr-item-cardapio{
     padding: 0px 5px;
     text-align: end;
+}
+
+section .bt-mostrar-itens {
+    width: 100%;
+    padding: 5px;
+    font-family: var(--fonte-cardapio);
+    font-size: 13px;
+    background-color: var(--corVerde);
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.5);
+}
+
+section .restante-item-cardapio {
+    display: none;
+}
+
+article.promocao-template {
+
+
+
+
+    display: none;
+
+
+
+
+
+
+    font-family: var(--fonte-midia);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 270px;
+    height: min-content;
+    padding: 10px 5px;
+    text-align: end;
+}
+
+article.promocao-template button {
+    font-size: 15px;
+    font-weight: bolder;
+    width: min-content;
+    padding: 7px 10px;
+    color: white;
+    background-color: red;
+    border-radius: 100px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+article .promocao {
+    height: 200px;
+    margin-top: 5px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background: url('../imagens/promocao-template.jpg');
+    background-size: cover;
+    border: 3px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.7);
+}
+
+article div {
+    height: 100%;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+}
+
+article div h2 {
+    font-family: var(--fonte-cardapio);
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+article div p {
+    font-size: 12px;
+    font-family: var(--fonte-padrao);
+    font-style: italic;
+    color: var(--corVerde);
 }
