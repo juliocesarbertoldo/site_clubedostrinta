@@ -16,20 +16,28 @@
 
 <body>
     <header>
-        
+        <div class="cabecalho">
+            <span class="logo"></span>
+            <span class="texto-cabecalho">
+                <h1>Aqui tem cerveja TOP!</h1>
+                <h2>Beba com moderação!</h2>
+                <h3>(44) 99952-1060</h3>
+            </span>
+            <span class="slogan"></span>
+        </div>
+        <!-- MENU HAMBURGUER -->
         <menu id="menu" class="menu">
-            <!-- MENU HAMBURGUER -->
             <span id="btBurguer" class="material-symbols-outlined bt-burguer">menu</span>
-            <!--  -->
             <ul id="lista_menu" class="lista-menu">
-                <li><a class="link-menu" href="#">Inicio</a></li>
-                <li><a class="link-menu" href="#">Cardapio</a></li>
-                <li><a class="link-menu" href="#">Contato</a></li>
+                <li><a class="link-menu" href="#">Download Cardapio</a></li>
+                <li><a class="link-menu" href="#">Fale Conosco</a></li>
             </ul>
         </menu>
+        <!--  -->
     </header>
     <main>
         <section id="cardapio" class="cardapio">
+            <!-- CERVEJA GARRAFA -->
             <ul class="lista-cardapio" class="lista-menu">
                 <h2 class="grupo">CERVEJA</h2>
                 <p class="sub-grupo">garrafa</p>
@@ -40,6 +48,7 @@
                     <span class="vlr-item-cardapio">9,00</span>
                     <span id="1" class="img-item-cardapio"></span>
                 </li>
+                <!-- CERVEJA GARRAFA  ITENS ESCONDIDOS -->
                 <span id="restante_item_cardapio_garrafa" class="restante-item-cardapio">
                     <li class="item-cardapio">
                         <em>02..</em>
@@ -78,7 +87,11 @@
                     </li>
                 </span>
                 <button class="btRestanteItensGarrafa bt-mostrar-itens">Mostrar Tudo &#128070</button>
+                <!-- -->
             </ul>
+            <!--  -->
+
+            <!-- CERVEJA LATA -->
             <ul class="lista-cardapio" class="lista-menu">
                 <h2 class="grupo">CERVEJA</h2>
                 <p class="sub-grupo">lata</p>
@@ -89,6 +102,7 @@
                     <span class="vlr-item-cardapio">5,00</span>
                     <span id="7" class="img-item-cardapio"></span>
                 </li>
+                <!-- CERVEJA LATA ITENS ESCONDIDOS -->
                 <span id="restante_item_cardapio_lata" class="restante-item-cardapio">
                     <li class="item-cardapio">
                         <em>08..</em>
@@ -113,7 +127,11 @@
                     </li>
                 </span>
                 <button class="btRestanteItensLata bt-mostrar-itens">Mostrar Tudo &#128070</button>
+                <!-- -->
             </ul>
+            <!--  -->
+
+            <!-- CERVEJA LONG -->
             <ul class="lista-cardapio" class="lista-menu">
                 <h2 class="grupo">CERVEJA</h2>
                 <p class="sub-grupo">long</p>
@@ -124,6 +142,7 @@
                     <span class="vlr-item-cardapio">8,00</span>
                     <span id="11" class="img-item-cardapio"></span>
                 </li>
+                <!-- CERVEJA LONG ITENS ESCONDIDOS -->
                 <span id="restante_item_cardapio_long" class="restante-item-cardapio">
                     <li class="item-cardapio">
                         <em>12..</em>
@@ -148,7 +167,11 @@
                     </li>
                 </span>
                 <button class="btRestanteItensLong bt-mostrar-itens">Mostrar Tudo &#128070</button>
+                <!--  -->
             </ul>
+            <!--  -->
+
+            <!-- REFRIGERANTE LATA -->
             <ul class="lista-cardapio" class="lista-menu">
                 <h2 class="grupo">REFRIGERANTE</h2>
                 <p class="sub-grupo">lata</p>
@@ -159,6 +182,7 @@
                     <span class="vlr-item-cardapio">5,00</span>
                     <span id="15" class="img-item-cardapio"></span>
                 </li>
+                <!-- REFRIGERANTE LATA ITENS ESCONDIDOS -->
                 <span id="restante_item_cardapio_refri" class="restante-item-cardapio">
                     <li class="item-cardapio">
                         <em>16..</em>
@@ -190,7 +214,11 @@
                     </li>
                 </span>
                 <button class="btRestanteItensRefri bt-mostrar-itens">Mostrar Tudo &#128070</button>
+                <!--  -->
             </ul>
+            <!--   -->
+
+            <!-- ESPETOS -->
             <ul class="lista-cardapio" class="lista-menu">
                 <h2 class="grupo">ESPETOS</h2>
                 <p class="sub-grupo">espetinhos</p>
@@ -201,6 +229,7 @@
                     <span class="vlr-item-cardapio">8,00</span>
                     <span id="20" class="img-item-cardapio"></span>
                 </li>
+                <!-- ESPETOS ITENS ESCONDIDOS -->
                 <span id="restante_item_cardapio_espeto" class="restante-item-cardapio">
                     <li class="item-cardapio">
                         <em>21..</em>
@@ -218,7 +247,11 @@
                     </li>
                 </span>
                 <button class="btRestanteItensEspeto bt-mostrar-itens">Mostrar Tudo &#128070</button>
+                <!--   -->
             </ul>
+            <!--   -->
+
+            <!-- DIVERSOS BEBIDAS -->
             <ul class="lista-cardapio" class="lista-menu">
                 <h2 class="grupo">DIVERSOS</h2>
                 <p class="sub-grupo">bebidas</p>
@@ -229,6 +262,7 @@
                     <span class="vlr-item-cardapio">9,00</span>
                     <span id="23" class="img-item-cardapio"></span>
                 </li>
+                <!-- DIVERSOS BEBIDAS ITENS ESCONDIDOS -->
                 <span id="restante_item_cardapio_bebida" class="restante-item-cardapio">
                     <li class="item-cardapio">
                         <em>24..</em>
@@ -260,7 +294,11 @@
                     </li>
                 </span>
                 <button class="btRestanteItensbebida bt-mostrar-itens">Mostrar Tudo &#128070</button>
+                <!--   -->
             </ul>
+            <!--   -->
+
+            <!-- DIVERSOS SALGADOS -->
             <ul class="lista-cardapio" class="lista-menu">
                 <h2 class="grupo">DIVERSOS</h2>
                 <p class="sub-grupo">salgados</p>
@@ -271,6 +309,7 @@
                     <span class="vlr-item-cardapio">4,00</span>
                     <span id="28" class="img-item-cardapio"></span>
                 </li>
+                <!-- DIVERSOS SALGADOS ITENS ESCONDIDOS -->
                 <span id="restante_item_cardapio_salgado" class="restante-item-cardapio">
                     <li class="item-cardapio">
                         <em>29..</em>
@@ -302,7 +341,11 @@
                     </li>
                 </span>
                 <button class="btRestanteItensSalgado bt-mostrar-itens">Mostrar Tudo &#128070</button>
+                <!--   -->
             </ul>
+            <!--   -->
+
+            <!-- DIVERSOS DOCES -->
             <ul class="lista-cardapio" class="lista-menu">
                 <h2 class="grupo">DIVERSOS</h2>
                 <p class="sub-grupo">doces</p>
@@ -313,6 +356,7 @@
                     <span class="vlr-item-cardapio">3,00</span>
                     <span id="33" class="img-item-cardapio"></span>
                 </li>
+                <!-- DIVERSOS DOCES ITENS ESCONDIDOS -->
                 <span id="restante_item_cardapio_doce" class="restante-item-cardapio">
                     <li class="item-cardapio">
                         <em>34..</em>
@@ -351,16 +395,18 @@
                     </li>
                 </span>
                 <button class="btRestanteItensDoce bt-mostrar-itens">Mostrar Tudo &#128070</button>
+                <!--   -->
             </ul>
+            <!--   -->
         </section>
         <article id="promocao_template" class="promocao-template">
             <button id="btPopUp" class="btPopUp">X</button>
             <aside class="promocao">
                 <div>
                     <h2>BOA DO DIA!</h2>
-                    <p>cerveja HEINEKEN garrafa</p>
                     <span
-                        style="display: block; width: 50px;height: 90px; margin: 5px auto; background: url(imagens/img-6.png) no-repeat 50%; background-size: contain;"></span>
+                    style="display: block; width: 50px;height: 90px; margin: 5px auto; background: url(imagens/img-6.png) no-repeat 50%; background-size: contain;"></span>
+                    <p>cerveja HEINEKEN garrafa</p>
                 </div>
             </aside>
         </article>
