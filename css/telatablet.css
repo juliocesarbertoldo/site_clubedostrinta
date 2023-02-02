@@ -27,6 +27,12 @@ Grandes telas: acima de 1200px
 }
 /********************************************/
 
+body {
+    background: url("../imagens/fd-pagina.jpg") no-repeat 50%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 header .cabecalho{
     grid-template-columns: 65% 35%;
     height: 250px;
@@ -49,6 +55,7 @@ header .texto-cabecalho h1 {
     margin-top: 70px;
     font-size: 30px;
     letter-spacing: 5px;
+    text-shadow: 2px 2px 2px black;
 }
 
 header .texto-cabecalho h2 {
@@ -60,3 +67,44 @@ header .texto-cabecalho h3 {
     margin-top: 50px;
     font-size: 15px;
 }
+
+header .menu #btBurguer {
+    display: none;
+}
+
+header .menu .lista-menu {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+header .menu .link-menu {
+    border: none;
+}
+
+section.cardapio {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+section .lista-cardapio {
+    width: 99%;
+    margin: 10px auto;
+    padding: 5px;
+    background-color: #251d0bc0;
+    border-radius: 20px;
+}
+
+section .item-cardapio {
+    background-color: #100f0dd8;
+}
+
+section .restante-item-cardapio {
+    display: block;
+}
+
+section .bt-mostrar-itens {
+    display: none;
+}
+
+
